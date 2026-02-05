@@ -203,7 +203,7 @@ export default function Shop() {
                       <input
                         type="range"
                         min="0"
-                        max="100"
+                        max="1500"
                         value={priceRange[0]}
                         onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
                         className="w-full"
@@ -214,7 +214,7 @@ export default function Shop() {
                       <input
                         type="range"
                         min="0"
-                        max="100"
+                        max="1500"
                         value={priceRange[1]}
                         onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
                         className="w-full"
@@ -306,7 +306,7 @@ export default function Shop() {
                         <input
                           type="range"
                           min="0"
-                          max="100"
+                          max="1500"
                           value={priceRange[0]}
                           onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
                           className="w-full"
@@ -317,7 +317,7 @@ export default function Shop() {
                         <input
                           type="range"
                           min="0"
-                          max="100"
+                          max="1500"
                           value={priceRange[1]}
                           onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
                           className="w-full"
