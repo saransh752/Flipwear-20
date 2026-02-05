@@ -302,7 +302,7 @@ export default function Shop() {
                     <h4 className="font-medium text-foreground mb-3">Price Range</h4>
                     <div className="space-y-3">
                       <div>
-                        <label className="text-sm text-muted-foreground">Min: ${priceRange[0]}</label>
+                        <label className="text-sm text-muted-foreground">Min: ₹{priceRange[0]}</label>
                         <input
                           type="range"
                           min="0"
