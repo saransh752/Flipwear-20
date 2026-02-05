@@ -8,8 +8,10 @@ export default function ThemeToggle() {
   // Check for saved theme preference or system preference on mount
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
+
     if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
       setIsDark(true);
       document.documentElement.classList.add("dark");
@@ -22,7 +24,7 @@ export default function ThemeToggle() {
   const toggleTheme = () => {
     const newIsDark = !isDark;
     setIsDark(newIsDark);
-    
+
     if (newIsDark) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
@@ -39,11 +41,7 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       aria-label="Toggle theme"
     >
-      {isDark ? (
-        <Sun className="w-5 h-5" />
-      ) : (
-        <Moon className="w-5 h-5" />
-      )}
+      {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
     </Button>
   );
 }

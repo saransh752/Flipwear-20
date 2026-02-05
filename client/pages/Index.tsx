@@ -2,7 +2,14 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Star, Shirt, TrendingUp, ChevronRight, Sparkles, Heart } from "lucide-react";
+import {
+  Star,
+  Shirt,
+  TrendingUp,
+  ChevronRight,
+  Sparkles,
+  Heart,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -24,9 +31,11 @@ const featuredProducts: Product[] = [
     category: "Hoodies",
     price: 899,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556821552-7e4e7f1000d6?w=500&h=500&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1556821552-7e4e7f1000d6?w=500&h=500&fit=crop",
     badge: "Popular",
-    description: "Comfortable and warm hoodie with college emblem. Perfect for cold campus mornings.",
+    description:
+      "Comfortable and warm hoodie with college emblem. Perfect for cold campus mornings.",
   },
   {
     id: 2,
@@ -34,9 +43,11 @@ const featuredProducts: Product[] = [
     category: "T-Shirts",
     price: 549,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
     badge: "New",
-    description: "Soft cotton t-shirt with university branding. Great for everyday wear and college events.",
+    description:
+      "Soft cotton t-shirt with university branding. Great for everyday wear and college events.",
   },
   {
     id: 3,
@@ -44,8 +55,10 @@ const featuredProducts: Product[] = [
     category: "Jackets",
     price: 1299,
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&h=500&fit=crop",
-    description: "Stylish jacket with embroidered college crest. Water-resistant material keeps you protected from weather.",
+    image:
+      "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&h=500&fit=crop",
+    description:
+      "Stylish jacket with embroidered college crest. Water-resistant material keeps you protected from weather.",
   },
   {
     id: 4,
@@ -53,8 +66,10 @@ const featuredProducts: Product[] = [
     category: "Accessories",
     price: 399,
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1588156211139-22d0f0f44928?w=500&h=500&fit=crop",
-    description: "Classic baseball cap with embroidered college logo. Adjustable strap for perfect fit.",
+    image:
+      "https://images.unsplash.com/photo-1588156211139-22d0f0f44928?w=500&h=500&fit=crop",
+    description:
+      "Classic baseball cap with embroidered college logo. Adjustable strap for perfect fit.",
   },
 ];
 
@@ -93,7 +108,7 @@ export default function Index() {
 
   const toggleWishlist = (id: number) => {
     setWishlist((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
     );
   };
 
@@ -107,7 +122,10 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20"></div>
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-          <div className="absolute top-40 right-10 w-72 h-72 bg-accent/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+          <div
+            className="absolute top-40 right-10 w-72 h-72 bg-accent/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"
+            style={{ animationDelay: "2s" }}
+          ></div>
         </div>
 
         <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
@@ -136,7 +154,10 @@ export default function Index() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                Express Your <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">College Pride</span>
+                Express Your{" "}
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  College Pride
+                </span>
               </motion.h1>
               <motion.p
                 className="text-lg text-muted-foreground max-w-lg"
@@ -144,7 +165,8 @@ export default function Index() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                Discover the ultimate collection of college hoodies, t-shirts, and accessories. Show your school spirit with style and comfort.
+                Discover the ultimate collection of college hoodies, t-shirts,
+                and accessories. Show your school spirit with style and comfort.
               </motion.p>
               <motion.div
                 className="flex flex-col sm:flex-row gap-4 pt-4"
@@ -153,13 +175,20 @@ export default function Index() {
                 transition={{ delay: 0.5 }}
               >
                 <Link to="/shop">
-                  <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">
+                  <Button
+                    size="lg"
+                    className="w-full sm:w-auto bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
+                  >
                     Shop Now
                     <ChevronRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
                 <Link to="/about">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 hover:bg-primary/10">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full sm:w-auto border-2 hover:bg-primary/10"
+                  >
                     Learn More
                   </Button>
                 </Link>
@@ -197,9 +226,21 @@ export default function Index() {
             viewport={{ once: true, amount: 0.2 }}
           >
             {[
-              { icon: Shirt, title: "Quality Products", desc: "Premium materials and excellent craftsmanship for every item" },
-              { icon: TrendingUp, title: "Student Friendly", desc: "Affordable prices designed for college students and their budgets" },
-              { icon: Star, title: "Wide Selection", desc: "Multiple colleges, styles, and sizes to choose from" },
+              {
+                icon: Shirt,
+                title: "Quality Products",
+                desc: "Premium materials and excellent craftsmanship for every item",
+              },
+              {
+                icon: TrendingUp,
+                title: "Student Friendly",
+                desc: "Affordable prices designed for college students and their budgets",
+              },
+              {
+                icon: Star,
+                title: "Wide Selection",
+                desc: "Multiple colleges, styles, and sizes to choose from",
+              },
             ].map((feature, idx) => (
               <motion.div
                 key={idx}
@@ -216,7 +257,9 @@ export default function Index() {
                     <feature.icon className="w-7 h-7 text-primary" />
                   </motion.div>
                 </motion.div>
-                <h3 className="text-xl font-bold text-foreground">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-foreground">
+                  {feature.title}
+                </h3>
                 <p className="text-muted-foreground">{feature.desc}</p>
               </motion.div>
             ))}
@@ -272,10 +315,16 @@ export default function Index() {
                 </span>
               </motion.div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-                See <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Your College Merch</span> in Action
+                See{" "}
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  Your College Merch
+                </span>{" "}
+                in Action
               </h2>
               <p className="text-lg text-muted-foreground">
-                Join thousands of college students who are already rocking Flip wear. Our quality merchandise is designed for comfort and style, perfect for your everyday campus life.
+                Join thousands of college students who are already rocking Flip
+                wear. Our quality merchandise is designed for comfort and style,
+                perfect for your everyday campus life.
               </p>
               <motion.ul
                 className="space-y-3"
@@ -301,7 +350,10 @@ export default function Index() {
                 ))}
               </motion.ul>
               <Link to="/shop">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
+                >
                   Explore Collection
                   <ChevronRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -390,12 +442,16 @@ export default function Index() {
 
                     {/* Product Info */}
                     <div className="p-5 flex flex-col flex-grow">
-                      <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">{product.category}</p>
+                      <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">
+                        {product.category}
+                      </p>
                       <h3 className="font-bold text-foreground mb-2 line-clamp-2 text-lg group-hover:text-primary transition-colors">
                         {product.name}
                       </h3>
                       {product.description && (
-                        <p className="text-sm text-muted-foreground mb-3 line-clamp-2 flex-grow">{product.description}</p>
+                        <p className="text-sm text-muted-foreground mb-3 line-clamp-2 flex-grow">
+                          {product.description}
+                        </p>
                       )}
 
                       {/* Rating */}
@@ -412,7 +468,9 @@ export default function Index() {
                             />
                           ))}
                         </div>
-                        <span className="text-xs font-semibold text-muted-foreground ml-1">({product.rating})</span>
+                        <span className="text-xs font-semibold text-muted-foreground ml-1">
+                          ({product.rating})
+                        </span>
                       </div>
 
                       {/* Price & Button */}
@@ -420,8 +478,14 @@ export default function Index() {
                         <motion.span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                           ₹{product.price}
                         </motion.span>
-                        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                          <Button size="sm" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white">
+                        <motion.div
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <Button
+                            size="sm"
+                            className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white"
+                          >
                             View
                           </Button>
                         </motion.div>
@@ -441,7 +505,11 @@ export default function Index() {
             transition={{ delay: 0.3 }}
           >
             <Link to="/shop">
-              <Button size="lg" variant="outline" className="border-2 hover:bg-primary/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 hover:bg-primary/10"
+              >
                 View All Products
                 <ChevronRight className="w-4 h-4 ml-2" />
               </Button>
@@ -474,7 +542,8 @@ export default function Index() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Ready to Showcase Your <span className="text-white">College Spirit?</span>
+            Ready to Showcase Your{" "}
+            <span className="text-white">College Spirit?</span>
           </motion.h2>
           <motion.p
             className="text-lg opacity-95 max-w-2xl mx-auto"
@@ -483,7 +552,8 @@ export default function Index() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            Start shopping now and find the perfect college merchandise that matches your style
+            Start shopping now and find the perfect college merchandise that
+            matches your style
           </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -492,7 +562,10 @@ export default function Index() {
             transition={{ delay: 0.3 }}
           >
             <Link to="/shop">
-              <Button size="lg" className="bg-white hover:bg-white/90 text-primary font-bold">
+              <Button
+                size="lg"
+                className="bg-white hover:bg-white/90 text-primary font-bold"
+              >
                 Start Shopping
                 <ChevronRight className="w-4 h-4 ml-2" />
               </Button>

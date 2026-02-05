@@ -30,22 +30,26 @@ export default function AboutPage() {
     {
       icon: Sparkles,
       title: "Quality First",
-      description: "We deliver premium merchandise that lasts through all four years of college",
+      description:
+        "We deliver premium merchandise that lasts through all four years of college",
     },
     {
       icon: Target,
       title: "Student Focused",
-      description: "Built by students, for students. We understand campus life and style",
+      description:
+        "Built by students, for students. We understand campus life and style",
     },
     {
       icon: Zap,
       title: "Fast & Reliable",
-      description: "Quick delivery and excellent customer service to support your needs",
+      description:
+        "Quick delivery and excellent customer service to support your needs",
     },
     {
       icon: Heart,
       title: "Community Driven",
-      description: "Supporting college communities and fostering school spirit everywhere",
+      description:
+        "Supporting college communities and fostering school spirit everywhere",
     },
   ];
 
@@ -58,7 +62,10 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10"></div>
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-10 left-5 w-96 h-96 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-5 w-96 h-96 bg-accent/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+          <div
+            className="absolute bottom-10 right-5 w-96 h-96 bg-accent/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"
+            style={{ animationDelay: "2s" }}
+          ></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -111,7 +118,8 @@ export default function AboutPage() {
                   Our Mission
                 </motion.div>
                 <h2 className="text-5xl font-black text-foreground mb-6">
-                  Celebrate Your<br />
+                  Celebrate Your
+                  <br />
                   <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     College Identity
                   </span>
@@ -125,7 +133,10 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
               >
-                Flip Wear was born from a simple idea: college students deserve quality merchandise that represents their school spirit. We started because we saw a gap in the market - students wanted a one-stop destination for authentic, stylish college apparel.
+                Flip Wear was born from a simple idea: college students deserve
+                quality merchandise that represents their school spirit. We
+                started because we saw a gap in the market - students wanted a
+                one-stop destination for authentic, stylish college apparel.
               </motion.p>
 
               <motion.p
@@ -135,7 +146,10 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                Today, Flip Wear is the trusted partner for thousands of college students across the country, providing premium hoodies, t-shirts, jackets, and accessories that make you proud to wear your college colors.
+                Today, Flip Wear is the trusted partner for thousands of college
+                students across the country, providing premium hoodies,
+                t-shirts, jackets, and accessories that make you proud to wear
+                your college colors.
               </motion.p>
 
               <motion.div
@@ -145,7 +159,10 @@ export default function AboutPage() {
                 transition={{ delay: 0.5 }}
               >
                 <Link to="/shop">
-                  <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
+                  >
                     Explore Our Collection
                     <Sparkles className="w-4 h-4 ml-2" />
                   </Button>
@@ -204,7 +221,10 @@ export default function AboutPage() {
                 key={idx}
                 className="bg-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all duration-300"
                 variants={itemVariants}
-                whileHover={{ y: -15, boxShadow: "0 20px 40px rgba(264, 80, 255, 0.2)" }}
+                whileHover={{
+                  y: -15,
+                  boxShadow: "0 20px 40px rgba(264, 80, 255, 0.2)",
+                }}
               >
                 <motion.div
                   className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center mb-6 border border-primary/30"
@@ -213,8 +233,12 @@ export default function AboutPage() {
                 >
                   <value.icon className="w-8 h-8 text-primary" />
                 </motion.div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">{value.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  {value.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {value.description}
+                </p>
               </motion.div>
             ))}
           </motion.div>
@@ -251,11 +275,17 @@ export default function AboutPage() {
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 + 0.3, type: "spring", stiffness: 100 }}
+                  transition={{
+                    delay: idx * 0.1 + 0.3,
+                    type: "spring",
+                    stiffness: 100,
+                  }}
                 >
                   {stat.number}
                 </motion.div>
-                <p className="text-lg text-muted-foreground font-medium">{stat.label}</p>
+                <p className="text-lg text-muted-foreground font-medium">
+                  {stat.label}
+                </p>
               </motion.div>
             ))}
           </motion.div>
@@ -272,9 +302,12 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-5xl font-black text-foreground">Built by Students</h2>
+            <h2 className="text-5xl font-black text-foreground">
+              Built by Students
+            </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We're a passionate team of college graduates dedicated to your experience
+              We're a passionate team of college graduates dedicated to your
+              experience
             </p>
           </motion.div>
 
@@ -286,9 +319,24 @@ export default function AboutPage() {
             viewport={{ once: true }}
           >
             {[
-              { name: "Alex Chen", role: "Founder & CEO", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" },
-              { name: "Sarah Johnson", role: "Head of Design", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" },
-              { name: "Mike Patel", role: "Operations Lead", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" },
+              {
+                name: "Alex Chen",
+                role: "Founder & CEO",
+                image:
+                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
+              },
+              {
+                name: "Sarah Johnson",
+                role: "Head of Design",
+                image:
+                  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
+              },
+              {
+                name: "Mike Patel",
+                role: "Operations Lead",
+                image:
+                  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop",
+              },
             ].map((member, idx) => (
               <motion.div
                 key={idx}
@@ -300,9 +348,15 @@ export default function AboutPage() {
                   className="mb-4 rounded-2xl overflow-hidden w-40 h-40 mx-auto"
                   whileHover={{ scale: 1.1 }}
                 >
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </motion.div>
-                <h3 className="text-2xl font-bold text-foreground">{member.name}</h3>
+                <h3 className="text-2xl font-bold text-foreground">
+                  {member.name}
+                </h3>
                 <p className="text-muted-foreground mt-1">{member.role}</p>
               </motion.div>
             ))}
@@ -350,7 +404,10 @@ export default function AboutPage() {
             transition={{ delay: 0.2 }}
           >
             <Link to="/shop">
-              <Button size="lg" className="bg-white hover:bg-white/90 text-primary font-bold">
+              <Button
+                size="lg"
+                className="bg-white hover:bg-white/90 text-primary font-bold"
+              >
                 Start Shopping Now
                 <Sparkles className="w-4 h-4 ml-2" />
               </Button>

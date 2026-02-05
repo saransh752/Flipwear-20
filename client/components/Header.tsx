@@ -24,9 +24,13 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">F</span>
+              <span className="text-primary-foreground font-bold text-lg">
+                F
+              </span>
             </div>
-            <span className="font-bold text-xl hidden sm:inline text-foreground">Flip Wear</span>
+            <span className="font-bold text-xl hidden sm:inline text-foreground">
+              Flip Wear
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -61,11 +65,7 @@ export default function Header() {
               </Button>
             </Link>
             <Link to="/login">
-              <Button
-                variant="ghost"
-                size="icon"
-                aria-label="User account"
-              >
+              <Button variant="ghost" size="icon" aria-label="User account">
                 <User className="w-5 h-5" />
               </Button>
             </Link>

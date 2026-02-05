@@ -105,12 +105,17 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
     letter-spacing: -0.3px;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', system-ui, sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", system-ui, sans-serif;
     font-weight: 700;
     letter-spacing: -0.5px;
     line-height: 1.2;
@@ -156,16 +161,20 @@
 @layer components {
   /* Flashy card animation */
   @keyframes flashy-glow {
-    0%, 100% {
+    0%,
+    100% {
       box-shadow: 0 0 20px rgba(264, 80, 255, 0.1);
     }
     50% {
-      box-shadow: 0 0 40px rgba(264, 80, 255, 0.3), 0 0 60px rgba(13, 100, 255, 0.2);
+      box-shadow:
+        0 0 40px rgba(264, 80, 255, 0.3),
+        0 0 60px rgba(13, 100, 255, 0.2);
     }
   }
 
   @keyframes float-gentle {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateY(0px);
     }
     50% {
@@ -239,7 +248,12 @@
 
   .animate-shimmer {
     animation: shimmer 2s linear infinite;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
     background-size: 1000px 100%;
   }
 

@@ -24,9 +24,11 @@ const allProducts: Product[] = [
     category: "Hoodies",
     price: 899,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556821552-7e4e7f1000d6?w=500&h=500&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1556821552-7e4e7f1000d6?w=500&h=500&fit=crop",
     badge: "Popular",
-    description: "Comfortable and warm hoodie with college emblem. Perfect for cold campus mornings.",
+    description:
+      "Comfortable and warm hoodie with college emblem. Perfect for cold campus mornings.",
   },
   {
     id: 2,
@@ -34,9 +36,11 @@ const allProducts: Product[] = [
     category: "T-Shirts",
     price: 549,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
     badge: "New",
-    description: "Soft cotton t-shirt with university branding. Great for everyday wear and college events.",
+    description:
+      "Soft cotton t-shirt with university branding. Great for everyday wear and college events.",
   },
   {
     id: 3,
@@ -44,8 +48,10 @@ const allProducts: Product[] = [
     category: "Jackets",
     price: 1299,
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&h=500&fit=crop",
-    description: "Stylish jacket with embroidered college crest. Water-resistant material for all seasons.",
+    image:
+      "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&h=500&fit=crop",
+    description:
+      "Stylish jacket with embroidered college crest. Water-resistant material for all seasons.",
   },
   {
     id: 4,
@@ -53,8 +59,10 @@ const allProducts: Product[] = [
     category: "Accessories",
     price: 399,
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1588156211139-22d0f0f44928?w=500&h=500&fit=crop",
-    description: "Classic baseball cap with embroidered logo. Adjustable strap with UV protection.",
+    image:
+      "https://images.unsplash.com/photo-1588156211139-22d0f0f44928?w=500&h=500&fit=crop",
+    description:
+      "Classic baseball cap with embroidered logo. Adjustable strap with UV protection.",
   },
   {
     id: 5,
@@ -62,8 +70,10 @@ const allProducts: Product[] = [
     category: "Hoodies",
     price: 999,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1512990182087-8d71bcdd2f18?w=500&h=500&fit=crop",
-    description: "Premium zip-up hoodie with fleece lining. High-quality fabric with college patch.",
+    image:
+      "https://images.unsplash.com/photo-1512990182087-8d71bcdd2f18?w=500&h=500&fit=crop",
+    description:
+      "Premium zip-up hoodie with fleece lining. High-quality fabric with college patch.",
   },
   {
     id: 6,
@@ -71,8 +81,10 @@ const allProducts: Product[] = [
     category: "T-Shirts",
     price: 599,
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1503341455253-b2e723bb12dd?w=500&h=500&fit=crop",
-    description: "Vintage-inspired college t-shirt with retro design. Perfect for collectors.",
+    image:
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb12dd?w=500&h=500&fit=crop",
+    description:
+      "Vintage-inspired college t-shirt with retro design. Perfect for collectors.",
   },
   {
     id: 7,
@@ -80,8 +92,10 @@ const allProducts: Product[] = [
     category: "Jackets",
     price: 1199,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1544623408-0edc4d5b1d9c?w=500&h=500&fit=crop",
-    description: "Trendy bomber jacket with college crest. Modern design meets campus spirit.",
+    image:
+      "https://images.unsplash.com/photo-1544623408-0edc4d5b1d9c?w=500&h=500&fit=crop",
+    description:
+      "Trendy bomber jacket with college crest. Modern design meets campus spirit.",
   },
   {
     id: 8,
@@ -89,8 +103,10 @@ const allProducts: Product[] = [
     category: "Accessories",
     price: 449,
     rating: 4.3,
-    image: "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=500&h=500&fit=crop",
-    description: "Warm and cozy beanie with embroidered logo. Perfect for cold weather.",
+    image:
+      "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=500&h=500&fit=crop",
+    description:
+      "Warm and cozy beanie with embroidered logo. Perfect for cold weather.",
   },
   {
     id: 9,
@@ -98,8 +114,10 @@ const allProducts: Product[] = [
     category: "Hoodies",
     price: 799,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556821552-5b51e8b5c5f8?w=500&h=500&fit=crop",
-    description: "Ultra-soft sweatshirt with college branding. Comfortable for casual wear.",
+    image:
+      "https://images.unsplash.com/photo-1556821552-5b51e8b5c5f8?w=500&h=500&fit=crop",
+    description:
+      "Ultra-soft sweatshirt with college branding. Comfortable for casual wear.",
   },
   {
     id: 10,
@@ -107,8 +125,10 @@ const allProducts: Product[] = [
     category: "T-Shirts",
     price: 579,
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1535050487db-381e31ac8e4b?w=500&h=500&fit=crop",
-    description: "Bold graphic tee with college artwork. Make a statement with your style.",
+    image:
+      "https://images.unsplash.com/photo-1535050487db-381e31ac8e4b?w=500&h=500&fit=crop",
+    description:
+      "Bold graphic tee with college artwork. Make a statement with your style.",
   },
   {
     id: 11,
@@ -116,8 +136,10 @@ const allProducts: Product[] = [
     category: "Jackets",
     price: 1099,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=500&fit=crop",
-    description: "Classic denim jacket with embroidered college patch. Timeless and versatile.",
+    image:
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=500&fit=crop",
+    description:
+      "Classic denim jacket with embroidered college patch. Timeless and versatile.",
   },
   {
     id: 12,
@@ -125,8 +147,10 @@ const allProducts: Product[] = [
     category: "Accessories",
     price: 899,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop",
-    description: "Durable backpack with college logo. Perfect for carrying books and essentials.",
+    image:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop",
+    description:
+      "Durable backpack with college logo. Perfect for carrying books and essentials.",
   },
 ];
 
@@ -148,14 +172,16 @@ export default function Shop() {
   const toggleWishlist = (id: number, e: React.MouseEvent) => {
     e.preventDefault();
     setWishlist((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
     );
   };
 
   // Filter products
   let filteredProducts = allProducts.filter((product) => {
-    const categoryMatch = selectedCategory === "All" || product.category === selectedCategory;
-    const priceMatch = product.price >= priceRange[0] && product.price <= priceRange[1];
+    const categoryMatch =
+      selectedCategory === "All" || product.category === selectedCategory;
+    const priceMatch =
+      product.price >= priceRange[0] && product.price <= priceRange[1];
     return categoryMatch && priceMatch;
   });
 
@@ -181,7 +207,10 @@ export default function Shop() {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <Link to="/" className="text-muted-foreground hover:text-foreground">
+              <Link
+                to="/"
+                className="text-muted-foreground hover:text-foreground"
+              >
                 Home
               </Link>
               <ChevronRight className="w-4 h-4 text-muted-foreground" />
@@ -192,7 +221,8 @@ export default function Shop() {
               College Merchandise
             </h1>
             <p className="text-muted-foreground mt-2">
-              Browse our complete collection of hoodies, t-shirts, jackets, and accessories
+              Browse our complete collection of hoodies, t-shirts, jackets, and
+              accessories
             </p>
           </motion.div>
         </div>
@@ -212,7 +242,9 @@ export default function Shop() {
               >
                 {/* Categories */}
                 <div>
-                  <h3 className="font-semibold text-foreground mb-4">Categories</h3>
+                  <h3 className="font-semibold text-foreground mb-4">
+                    Categories
+                  </h3>
                   <div className="space-y-2">
                     {categories.map((category) => (
                       <motion.button
@@ -233,27 +265,43 @@ export default function Shop() {
 
                 {/* Price Range */}
                 <div>
-                  <h3 className="font-semibold text-foreground mb-4">Price Range</h3>
+                  <h3 className="font-semibold text-foreground mb-4">
+                    Price Range
+                  </h3>
                   <div className="space-y-3">
                     <div>
-                      <label className="text-sm text-muted-foreground">Min: ₹{priceRange[0]}</label>
+                      <label className="text-sm text-muted-foreground">
+                        Min: ₹{priceRange[0]}
+                      </label>
                       <input
                         type="range"
                         min="300"
                         max="1500"
                         value={priceRange[0]}
-                        onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
+                        onChange={(e) =>
+                          setPriceRange([
+                            parseInt(e.target.value),
+                            priceRange[1],
+                          ])
+                        }
                         className="w-full accent-primary"
                       />
                     </div>
                     <div>
-                      <label className="text-sm text-muted-foreground">Max: ₹{priceRange[1]}</label>
+                      <label className="text-sm text-muted-foreground">
+                        Max: ₹{priceRange[1]}
+                      </label>
                       <input
                         type="range"
                         min="300"
                         max="1500"
                         value={priceRange[1]}
-                        onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
+                        onChange={(e) =>
+                          setPriceRange([
+                            priceRange[0],
+                            parseInt(e.target.value),
+                          ])
+                        }
                         className="w-full accent-primary"
                       />
                     </div>
@@ -263,7 +311,11 @@ export default function Shop() {
                 {/* Results Count */}
                 <div className="pt-4 border-t border-border">
                   <p className="text-sm text-muted-foreground">
-                    Showing <span className="font-bold text-foreground">{filteredProducts.length}</span> products
+                    Showing{" "}
+                    <span className="font-bold text-foreground">
+                      {filteredProducts.length}
+                    </span>{" "}
+                    products
                   </p>
                 </div>
               </motion.div>
@@ -322,7 +374,9 @@ export default function Shop() {
 
                   {/* Categories */}
                   <div className="mb-6">
-                    <h4 className="font-medium text-foreground mb-3">Categories</h4>
+                    <h4 className="font-medium text-foreground mb-3">
+                      Categories
+                    </h4>
                     <div className="space-y-2">
                       {categories.map((category) => (
                         <button
@@ -345,27 +399,43 @@ export default function Shop() {
 
                   {/* Price Range */}
                   <div>
-                    <h4 className="font-medium text-foreground mb-3">Price Range</h4>
+                    <h4 className="font-medium text-foreground mb-3">
+                      Price Range
+                    </h4>
                     <div className="space-y-3">
                       <div>
-                        <label className="text-sm text-muted-foreground">Min: ₹{priceRange[0]}</label>
+                        <label className="text-sm text-muted-foreground">
+                          Min: ₹{priceRange[0]}
+                        </label>
                         <input
                           type="range"
                           min="300"
                           max="1500"
                           value={priceRange[0]}
-                          onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
+                          onChange={(e) =>
+                            setPriceRange([
+                              parseInt(e.target.value),
+                              priceRange[1],
+                            ])
+                          }
                           className="w-full"
                         />
                       </div>
                       <div>
-                        <label className="text-sm text-muted-foreground">Max: ₹{priceRange[1]}</label>
+                        <label className="text-sm text-muted-foreground">
+                          Max: ₹{priceRange[1]}
+                        </label>
                         <input
                           type="range"
                           min="300"
                           max="1500"
                           value={priceRange[1]}
-                          onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
+                          onChange={(e) =>
+                            setPriceRange([
+                              priceRange[0],
+                              parseInt(e.target.value),
+                            ])
+                          }
                           className="w-full"
                         />
                       </div>
@@ -430,12 +500,16 @@ export default function Shop() {
 
                           {/* Product Info */}
                           <div className="p-5 flex flex-col flex-grow">
-                            <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">{product.category}</p>
+                            <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">
+                              {product.category}
+                            </p>
                             <h3 className="font-bold text-foreground mb-2 line-clamp-2 text-lg group-hover:text-primary transition-colors">
                               {product.name}
                             </h3>
                             {product.description && (
-                              <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{product.description}</p>
+                              <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
+                                {product.description}
+                              </p>
                             )}
 
                             {/* Rating */}
@@ -452,7 +526,9 @@ export default function Shop() {
                                   />
                                 ))}
                               </div>
-                              <span className="text-xs font-semibold text-muted-foreground ml-1">({product.rating})</span>
+                              <span className="text-xs font-semibold text-muted-foreground ml-1">
+                                ({product.rating})
+                              </span>
                             </div>
 
                             {/* Price & Button */}
@@ -460,8 +536,14 @@ export default function Shop() {
                               <motion.span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                                 ₹{product.price}
                               </motion.span>
-                              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                <Button size="sm" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white">
+                              <motion.div
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                              >
+                                <Button
+                                  size="sm"
+                                  className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white"
+                                >
                                   View
                                 </Button>
                               </motion.div>
@@ -478,7 +560,9 @@ export default function Shop() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                 >
-                  <p className="text-lg text-muted-foreground">No products found</p>
+                  <p className="text-lg text-muted-foreground">
+                    No products found
+                  </p>
                   <p className="text-sm text-muted-foreground mt-2">
                     Try adjusting your filters or price range
                   </p>

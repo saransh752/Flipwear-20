@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
+} from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -27,22 +34,34 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/" className="opacity-90 hover:opacity-100 transition-opacity">
+                <Link
+                  to="/"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/shop" className="opacity-90 hover:opacity-100 transition-opacity">
+                <Link
+                  to="/shop"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   Shop
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="opacity-90 hover:opacity-100 transition-opacity">
+                <Link
+                  to="/about"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/size-guide" className="opacity-90 hover:opacity-100 transition-opacity">
+                <Link
+                  to="/size-guide"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   Size Guide
                 </Link>
               </li>
@@ -54,22 +73,34 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Customer Service</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="opacity-90 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#" className="opacity-90 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   Shipping Info
                 </a>
               </li>
               <li>
-                <a href="#" className="opacity-90 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   Returns & Exchanges
                 </a>
               </li>
               <li>
-                <a href="#" className="opacity-90 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   FAQ
                 </a>
               </li>
@@ -82,13 +113,19 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 shrink-0" />
-                <a href="mailto:hello@flipwear.com" className="opacity-90 hover:opacity-100 transition-opacity">
+                <a
+                  href="mailto:hello@flipwear.com"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   hello@flipwear.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" />
-                <a href="tel:+1234567890" className="opacity-90 hover:opacity-100 transition-opacity">
+                <a
+                  href="tel:+1234567890"
+                  className="opacity-90 hover:opacity-100 transition-opacity"
+                >
                   +1 (234) 567-890
                 </a>
               </li>
@@ -103,13 +140,25 @@ export default function Footer() {
         {/* Social Links */}
         <div className="py-8 border-t border-secondary-foreground/20 flex flex-col sm:flex-row items-center justify-between">
           <div className="flex gap-4 mb-4 sm:mb-0">
-            <a href="#" aria-label="Facebook" className="opacity-75 hover:opacity-100 transition-opacity">
+            <a
+              href="#"
+              aria-label="Facebook"
+              className="opacity-75 hover:opacity-100 transition-opacity"
+            >
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="#" aria-label="Twitter" className="opacity-75 hover:opacity-100 transition-opacity">
+            <a
+              href="#"
+              aria-label="Twitter"
+              className="opacity-75 hover:opacity-100 transition-opacity"
+            >
               <Twitter className="w-5 h-5" />
             </a>
-            <a href="#" aria-label="Instagram" className="opacity-75 hover:opacity-100 transition-opacity">
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="opacity-75 hover:opacity-100 transition-opacity"
+            >
               <Instagram className="w-5 h-5" />
             </a>
           </div>

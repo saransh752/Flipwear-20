@@ -6,7 +6,7 @@ export default {
   prefix: "",
   theme: {
     fontFamily: {
-      sans: ['Inter', 'system-ui', 'sans-serif'],
+      sans: ["Inter", "system-ui", "sans-serif"],
     },
     container: {
       center: true,
@@ -88,8 +88,8 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "flashy-glow": "flashy-glow 3s ease-in-out infinite",
-        "float": "float-gentle 3s ease-in-out infinite",
-        "shimmer": "shimmer 2s linear infinite",
+        float: "float-gentle 3s ease-in-out infinite",
+        shimmer: "shimmer 2s linear infinite",
         "pulse-ring": "pulse-ring 2s infinite",
         "slide-in-left": "slide-in-left 0.6s ease-out",
         "slide-in-right": "slide-in-right 0.6s ease-out",

@@ -10,7 +10,10 @@ interface PlaceholderPageProps {
   icon?: string;
 }
 
-export default function PlaceholderPage({ title, description }: PlaceholderPageProps) {
+export default function PlaceholderPage({
+  title,
+  description,
+}: PlaceholderPageProps) {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -22,7 +25,7 @@ export default function PlaceholderPage({ title, description }: PlaceholderPageP
           </div>
           <h1 className="text-3xl font-bold text-foreground">{title}</h1>
           <p className="text-muted-foreground">{description}</p>
-          
+
           <div className="pt-6">
             <Link to="/">
               <Button variant="outline" className="gap-2">

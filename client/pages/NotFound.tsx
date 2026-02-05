@@ -25,7 +25,8 @@ const NotFound = () => {
           <div className="text-6xl font-bold text-primary">404</div>
           <h1 className="text-3xl font-bold text-foreground">Page Not Found</h1>
           <p className="text-lg text-muted-foreground">
-            Sorry, the page you're looking for doesn't exist. Let's get you back on track.
+            Sorry, the page you're looking for doesn't exist. Let's get you back
+            on track.
           </p>
           <Link to="/">
             <Button size="lg" className="gap-2">
