@@ -202,7 +202,7 @@ export default function Shop() {
                       <label className="text-sm text-muted-foreground">Min: ₹{priceRange[0]}</label>
                       <input
                         type="range"
-                        min="0"
+                        min="300"
                         max="1500"
                         value={priceRange[0]}
                         onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
@@ -213,7 +213,7 @@ export default function Shop() {
                       <label className="text-sm text-muted-foreground">Max: ₹{priceRange[1]}</label>
                       <input
                         type="range"
-                        min="0"
+                        min="300"
                         max="1500"
                         value={priceRange[1]}
                         onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
@@ -305,7 +305,7 @@ export default function Shop() {
                         <label className="text-sm text-muted-foreground">Min: ₹{priceRange[0]}</label>
                         <input
                           type="range"
-                          min="0"
+                          min="300"
                           max="1500"
                           value={priceRange[0]}
                           onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
@@ -316,7 +316,7 @@ export default function Shop() {
                         <label className="text-sm text-muted-foreground">Max: ₹{priceRange[1]}</label>
                         <input
                           type="range"
-                          min="0"
+                          min="300"
                           max="1500"
                           value={priceRange[1]}
                           onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
