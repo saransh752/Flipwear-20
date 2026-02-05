@@ -13,6 +13,7 @@ interface Product {
   rating: number;
   image: string;
   badge?: string;
+  description?: string;
 }
 
 const allProducts: Product[] = [
