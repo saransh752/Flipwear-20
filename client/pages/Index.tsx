@@ -12,6 +12,7 @@ interface Product {
   rating: number;
   image: string;
   badge?: string;
+  description?: string;
 }
 
 const featuredProducts: Product[] = [
