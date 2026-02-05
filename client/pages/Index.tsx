@@ -22,8 +22,9 @@ const featuredProducts: Product[] = [
     category: "Hoodies",
     price: 899,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556821552-7e4e7f1000d6?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556821552-7e4e7f1000d6?w=500&h=500&fit=crop",
     badge: "Popular",
+    description: "Comfortable and warm hoodie with college emblem. Perfect for cold campus mornings and late-night study sessions. Premium cotton blend fabric.",
   },
   {
     id: 2,
@@ -31,8 +32,9 @@ const featuredProducts: Product[] = [
     category: "T-Shirts",
     price: 549,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
     badge: "New",
+    description: "Versatile and stylish university t-shirt. Soft cotton fabric with college branding. Great for everyday wear and college events.",
   },
   {
     id: 3,
@@ -40,7 +42,8 @@ const featuredProducts: Product[] = [
     category: "Jackets",
     price: 1299,
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&h=500&fit=crop",
+    description: "Stylish jacket with embroidered college crest. Water-resistant material keeps you protected from weather. Perfect for all-season wear.",
   },
   {
     id: 4,
@@ -48,7 +51,8 @@ const featuredProducts: Product[] = [
     category: "Accessories",
     price: 399,
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1588156211139-22d0f0f44928?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1588156211139-22d0f0f44928?w=500&h=500&fit=crop",
+    description: "Classic baseball cap with embroidered college logo. Adjustable strap for perfect fit. UV protection for outdoor activities.",
   },
 ];
 
