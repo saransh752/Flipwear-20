@@ -143,6 +143,13 @@ export default function Shop() {
   const [sortBy, setSortBy] = useState("latest");
   const [priceRange, setPriceRange] = useState([300, 1500]);
   const [showFilters, setShowFilters] = useState(false);
+  const [wishlist, setWishlist] = useState<number[]>([]);
+
+  const toggleWishlist = (id: number) => {
+    setWishlist((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+    );
+  };
 
   // Filter products
   let filteredProducts = allProducts.filter((product) => {
