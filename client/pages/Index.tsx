@@ -177,7 +177,10 @@ export default function Index() {
                   {/* Product Info */}
                   <div className="p-4 flex flex-col flex-grow">
                     <p className="text-sm text-muted-foreground mb-2">{product.category}</p>
-                    <h3 className="font-semibold text-foreground mb-2 line-clamp-2 flex-grow">{product.name}</h3>
+                    <h3 className="font-semibold text-foreground mb-2 line-clamp-2">{product.name}</h3>
+                    {product.description && (
+                      <p className="text-sm text-muted-foreground mb-3 line-clamp-2 flex-grow">{product.description}</p>
+                    )}
 
                     {/* Rating */}
                     <div className="flex items-center gap-1 mb-4">
