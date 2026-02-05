@@ -127,7 +127,7 @@ const sortOptions = [
 export default function Shop() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortBy, setSortBy] = useState("latest");
-  const [priceRange, setPriceRange] = useState([0, 100]);
+  const [priceRange, setPriceRange] = useState([300, 1500]);
   const [showFilters, setShowFilters] = useState(false);
 
   // Filter products
