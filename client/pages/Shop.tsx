@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Star, ChevronRight, Filter, X, Heart } from "lucide-react";
+import { Star, ChevronRight, Filter, X, Heart, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface Product {
@@ -145,7 +145,8 @@ export default function Shop() {
   const [showFilters, setShowFilters] = useState(false);
   const [wishlist, setWishlist] = useState<number[]>([]);
 
-  const toggleWishlist = (id: number) => {
+  const toggleWishlist = (id: number, e: React.MouseEvent) => {
+    e.preventDefault();
     setWishlist((prev) =>
       prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
     );
@@ -172,19 +173,28 @@ export default function Shop() {
       <Header />
 
       {/* Page Header */}
-      <section className="bg-muted/50 py-12">
+      <section className="bg-gradient-to-r from-muted/50 to-muted/30 py-12 border-b border-border">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 mb-4">
-            <Link to="/" className="text-muted-foreground hover:text-foreground">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4 text-muted-foreground" />
-            <span className="text-foreground font-medium">Shop</span>
-          </div>
-          <h1 className="text-4xl font-bold text-foreground">College Merchandise</h1>
-          <p className="text-muted-foreground mt-2">
-            Browse our complete collection of hoodies, t-shirts, jackets, and accessories
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <Link to="/" className="text-muted-foreground hover:text-foreground">
+                Home
+              </Link>
+              <ChevronRight className="w-4 h-4 text-muted-foreground" />
+              <span className="text-foreground font-medium">Shop</span>
+            </div>
+            <h1 className="text-4xl font-bold text-foreground flex items-center gap-2">
+              <Sparkles className="w-8 h-8 text-accent" />
+              College Merchandise
+            </h1>
+            <p className="text-muted-foreground mt-2">
+              Browse our complete collection of hoodies, t-shirts, jackets, and accessories
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -194,23 +204,29 @@ export default function Shop() {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* Sidebar Filters - Desktop */}
             <aside className="hidden lg:block">
-              <div className="bg-card rounded-lg border border-border p-6 sticky top-24 space-y-6">
+              <motion.div
+                className="bg-card rounded-lg border border-border p-6 sticky top-24 space-y-6"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 {/* Categories */}
                 <div>
                   <h3 className="font-semibold text-foreground mb-4">Categories</h3>
                   <div className="space-y-2">
                     {categories.map((category) => (
-                      <button
+                      <motion.button
                         key={category}
                         onClick={() => setSelectedCategory(category)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
+                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
                           selectedCategory === category
-                            ? "bg-primary text-primary-foreground font-medium"
+                            ? "bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-medium"
                             : "text-foreground hover:bg-muted"
                         }`}
+                        whileHover={{ x: 5 }}
                       >
                         {category}
-                      </button>
+                      </motion.button>
                     ))}
                   </div>
                 </div>
@@ -227,7 +243,7 @@ export default function Shop() {
                         max="1500"
                         value={priceRange[0]}
                         onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
-                        className="w-full"
+                        className="w-full accent-primary"
                       />
                     </div>
                     <div>
@@ -238,7 +254,7 @@ export default function Shop() {
                         max="1500"
                         value={priceRange[1]}
                         onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
-                        className="w-full"
+                        className="w-full accent-primary"
                       />
                     </div>
                   </div>
@@ -247,26 +263,31 @@ export default function Shop() {
                 {/* Results Count */}
                 <div className="pt-4 border-t border-border">
                   <p className="text-sm text-muted-foreground">
-                    Showing {filteredProducts.length} products
+                    Showing <span className="font-bold text-foreground">{filteredProducts.length}</span> products
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </aside>
 
             {/* Main Content */}
             <div className="lg:col-span-3">
               {/* Top Bar - Sort & Filter Button */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
+              <motion.div
+                className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+              >
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => setShowFilters(!showFilters)}
-                    className="lg:hidden flex items-center gap-2 px-4 py-2 border border-border rounded-md hover:bg-muted transition-colors"
+                    className="lg:hidden flex items-center gap-2 px-4 py-2 border border-border rounded-lg hover:bg-muted transition-colors font-medium"
                   >
                     <Filter className="w-4 h-4" />
                     Filters
                   </button>
                   <span className="text-sm text-muted-foreground">
-                    {filteredProducts.length} products
+                    {filteredProducts.length} items
                   </span>
                 </div>
 
@@ -274,7 +295,7 @@ export default function Shop() {
                   <select
                     value={sortBy}
                     onChange={(e) => setSortBy(e.target.value)}
-                    className="w-full px-4 py-2 border border-border rounded-md bg-background text-foreground hover:border-primary transition-colors"
+                    className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground hover:border-primary transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
                   >
                     {sortOptions.map((option) => (
                       <option key={option.id} value={option.id}>
@@ -283,11 +304,15 @@ export default function Shop() {
                     ))}
                   </select>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Mobile Filters */}
               {showFilters && (
-                <div className="lg:hidden bg-card rounded-lg border border-border p-6 mb-8">
+                <motion.div
+                  className="lg:hidden bg-card rounded-lg border border-border p-6 mb-8"
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                >
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-semibold text-foreground">Filters</h3>
                     <button onClick={() => setShowFilters(false)}>
@@ -346,79 +371,118 @@ export default function Shop() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               )}
 
               {/* Products Grid */}
               {filteredProducts.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredProducts.map((product) => (
-                    <Link key={product.id} to={`/product/${product.id}`}>
-                      <div className="bg-card rounded-xl overflow-hidden border border-border hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
-                        {/* Product Image Container */}
-                        <div className="relative h-56 overflow-hidden bg-muted">
-                          <img
-                            src={product.image}
-                            alt={product.name}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          />
-                          {product.badge && (
-                            <div className="absolute top-3 right-3">
-                              <span className="inline-block px-3 py-1 bg-accent text-accent-foreground text-xs font-semibold rounded-full">
-                                {product.badge}
-                              </span>
-                            </div>
-                          )}
-                        </div>
+                  {filteredProducts.map((product, index) => (
+                    <motion.div
+                      key={product.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: index * 0.05 }}
+                    >
+                      <Link to={`/product/${product.id}`}>
+                        <motion.div
+                          className="bg-gradient-to-br from-card to-card/50 rounded-2xl overflow-hidden border border-border hover:border-primary/50 shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col group relative"
+                          whileHover={{ y: -10 }}
+                        >
+                          {/* Wishlist Button */}
+                          <motion.button
+                            onClick={(e) => toggleWishlist(product.id, e)}
+                            className="absolute top-3 right-3 z-10 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-lg hover:bg-white transition-all"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <Heart
+                              className={`w-5 h-5 transition-all ${
+                                wishlist.includes(product.id)
+                                  ? "fill-red-500 text-red-500"
+                                  : "text-gray-400 hover:text-red-500"
+                              }`}
+                            />
+                          </motion.button>
 
-                        {/* Product Info */}
-                        <div className="p-4 flex flex-col flex-grow">
-                          <p className="text-sm text-muted-foreground mb-2">{product.category}</p>
-                          <h3 className="font-semibold text-foreground mb-2 line-clamp-2">
-                            {product.name}
-                          </h3>
-                          {product.description && (
-                            <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{product.description}</p>
-                          )}
-
-                          {/* Rating */}
-                          <div className="flex items-center gap-1 mb-4">
-                            <div className="flex">
-                              {[...Array(5)].map((_, i) => (
-                                <Star
-                                  key={i}
-                                  className={`w-4 h-4 ${
-                                    i < Math.floor(product.rating)
-                                      ? "fill-accent text-accent"
-                                      : "text-muted"
-                                  }`}
-                                />
-                              ))}
-                            </div>
-                            <span className="text-sm text-muted-foreground ml-2">
-                              ({product.rating})
-                            </span>
+                          {/* Product Image Container */}
+                          <div className="relative h-56 overflow-hidden bg-gradient-to-br from-muted to-muted/50">
+                            <motion.img
+                              src={product.image}
+                              alt={product.name}
+                              className="w-full h-full object-cover"
+                              whileHover={{ scale: 1.1 }}
+                              transition={{ duration: 0.3 }}
+                            />
+                            {product.badge && (
+                              <motion.div
+                                className="absolute top-3 left-3"
+                                initial={{ scale: 0 }}
+                                whileInView={{ scale: 1 }}
+                                viewport={{ once: true }}
+                              >
+                                <span className="inline-block px-3 py-1 bg-gradient-to-r from-accent to-accent/80 text-accent-foreground text-xs font-bold rounded-full shadow-lg">
+                                  {product.badge}
+                                </span>
+                              </motion.div>
+                            )}
                           </div>
 
-                          {/* Price & Button */}
-                          <div className="flex items-center justify-between mt-auto">
-                            <span className="text-2xl font-bold text-foreground">₹{product.price}</span>
-                            <Button size="sm" variant="outline">
-                              View
-                            </Button>
+                          {/* Product Info */}
+                          <div className="p-5 flex flex-col flex-grow">
+                            <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">{product.category}</p>
+                            <h3 className="font-bold text-foreground mb-2 line-clamp-2 text-lg group-hover:text-primary transition-colors">
+                              {product.name}
+                            </h3>
+                            {product.description && (
+                              <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{product.description}</p>
+                            )}
+
+                            {/* Rating */}
+                            <div className="flex items-center gap-2 mb-4">
+                              <div className="flex gap-1">
+                                {[...Array(5)].map((_, i) => (
+                                  <Star
+                                    key={i}
+                                    className={`w-3.5 h-3.5 ${
+                                      i < Math.floor(product.rating)
+                                        ? "fill-accent text-accent"
+                                        : "text-muted"
+                                    }`}
+                                  />
+                                ))}
+                              </div>
+                              <span className="text-xs font-semibold text-muted-foreground ml-1">({product.rating})</span>
+                            </div>
+
+                            {/* Price & Button */}
+                            <div className="flex items-center justify-between mt-auto">
+                              <motion.span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                                ₹{product.price}
+                              </motion.span>
+                              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                                <Button size="sm" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white">
+                                  View
+                                </Button>
+                              </motion.div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </Link>
+                        </motion.div>
+                      </Link>
+                    </motion.div>
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-12">
+                <motion.div
+                  className="text-center py-12"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
                   <p className="text-lg text-muted-foreground">No products found</p>
                   <p className="text-sm text-muted-foreground mt-2">
                     Try adjusting your filters or price range
                   </p>
-                </div>
+                </motion.div>
               )}
             </div>
           </div>
