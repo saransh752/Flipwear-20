@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Star, Shirt, TrendingUp, ChevronRight } from "lucide-react";
+import { Star, Shirt, TrendingUp, ChevronRight, Sparkles } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface Product {
   id: number;
