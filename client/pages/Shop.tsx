@@ -313,7 +313,7 @@ export default function Shop() {
                         />
                       </div>
                       <div>
-                        <label className="text-sm text-muted-foreground">Max: ${priceRange[1]}</label>
+                        <label className="text-sm text-muted-foreground">Max: ₹{priceRange[1]}</label>
                         <input
                           type="range"
                           min="0"
