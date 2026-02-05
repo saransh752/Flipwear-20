@@ -23,8 +23,9 @@ const allProducts: Product[] = [
     category: "Hoodies",
     price: 899,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1556821552-7e4e7f1000d6?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556821552-7e4e7f1000d6?w=500&h=500&fit=crop",
     badge: "Popular",
+    description: "Comfortable and warm hoodie with college emblem. Perfect for cold campus mornings.",
   },
   {
     id: 2,
@@ -32,8 +33,9 @@ const allProducts: Product[] = [
     category: "T-Shirts",
     price: 549,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
     badge: "New",
+    description: "Soft cotton t-shirt with university branding. Great for everyday wear and college events.",
   },
   {
     id: 3,
@@ -41,7 +43,8 @@ const allProducts: Product[] = [
     category: "Jackets",
     price: 1299,
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&h=500&fit=crop",
+    description: "Stylish jacket with embroidered college crest. Water-resistant material for all seasons.",
   },
   {
     id: 4,
@@ -49,7 +52,8 @@ const allProducts: Product[] = [
     category: "Accessories",
     price: 399,
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1588156211139-22d0f0f44928?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1588156211139-22d0f0f44928?w=500&h=500&fit=crop",
+    description: "Classic baseball cap with embroidered logo. Adjustable strap with UV protection.",
   },
   {
     id: 5,
@@ -57,7 +61,8 @@ const allProducts: Product[] = [
     category: "Hoodies",
     price: 999,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1512990182087-8d71bcdd2f18?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1512990182087-8d71bcdd2f18?w=500&h=500&fit=crop",
+    description: "Premium zip-up hoodie with fleece lining. High-quality fabric with college patch.",
   },
   {
     id: 6,
@@ -65,7 +70,8 @@ const allProducts: Product[] = [
     category: "T-Shirts",
     price: 599,
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1503341455253-b2e723bb12dd?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1503341455253-b2e723bb12dd?w=500&h=500&fit=crop",
+    description: "Vintage-inspired college t-shirt with retro design. Perfect for collectors.",
   },
   {
     id: 7,
@@ -73,7 +79,8 @@ const allProducts: Product[] = [
     category: "Jackets",
     price: 1199,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1544623408-0edc4d5b1d9c?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544623408-0edc4d5b1d9c?w=500&h=500&fit=crop",
+    description: "Trendy bomber jacket with college crest. Modern design meets campus spirit.",
   },
   {
     id: 8,
@@ -81,7 +88,8 @@ const allProducts: Product[] = [
     category: "Accessories",
     price: 449,
     rating: 4.3,
-    image: "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=500&h=500&fit=crop",
+    description: "Warm and cozy beanie with embroidered logo. Perfect for cold weather.",
   },
   {
     id: 9,
@@ -89,7 +97,8 @@ const allProducts: Product[] = [
     category: "Hoodies",
     price: 799,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1556821552-5b51e8b5c5f8?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556821552-5b51e8b5c5f8?w=500&h=500&fit=crop",
+    description: "Ultra-soft sweatshirt with college branding. Comfortable for casual wear.",
   },
   {
     id: 10,
@@ -97,7 +106,8 @@ const allProducts: Product[] = [
     category: "T-Shirts",
     price: 579,
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1535050487db-381e31ac8e4b?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1535050487db-381e31ac8e4b?w=500&h=500&fit=crop",
+    description: "Bold graphic tee with college artwork. Make a statement with your style.",
   },
   {
     id: 11,
@@ -105,7 +115,8 @@ const allProducts: Product[] = [
     category: "Jackets",
     price: 1099,
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=500&fit=crop",
+    description: "Classic denim jacket with embroidered college patch. Timeless and versatile.",
   },
   {
     id: 12,
@@ -113,7 +124,8 @@ const allProducts: Product[] = [
     category: "Accessories",
     price: 899,
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop",
+    description: "Durable backpack with college logo. Perfect for carrying books and essentials.",
   },
 ];
 
