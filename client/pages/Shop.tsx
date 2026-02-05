@@ -199,7 +199,7 @@ export default function Shop() {
                   <h3 className="font-semibold text-foreground mb-4">Price Range</h3>
                   <div className="space-y-3">
                     <div>
-                      <label className="text-sm text-muted-foreground">Min: ${priceRange[0]}</label>
+                      <label className="text-sm text-muted-foreground">Min: ₹{priceRange[0]}</label>
                       <input
                         type="range"
                         min="0"
@@ -210,7 +210,7 @@ export default function Shop() {
                       />
                     </div>
                     <div>
-                      <label className="text-sm text-muted-foreground">Max: ${priceRange[1]}</label>
+                      <label className="text-sm text-muted-foreground">Max: ₹{priceRange[1]}</label>
                       <input
                         type="range"
                         min="0"
