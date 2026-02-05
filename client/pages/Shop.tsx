@@ -378,7 +378,7 @@ export default function Shop() {
 
                           {/* Price & Button */}
                           <div className="flex items-center justify-between mt-auto">
-                            <span className="text-2xl font-bold text-foreground">${product.price}</span>
+                            <span className="text-2xl font-bold text-foreground">₹{product.price}</span>
                             <Button size="sm" variant="outline">
                               View
                             </Button>
