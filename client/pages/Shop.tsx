@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Star, ChevronRight, Filter, X } from "lucide-react";
+import { Star, ChevronRight, Filter, X, Heart } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface Product {
   id: number;
