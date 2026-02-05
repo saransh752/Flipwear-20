@@ -48,6 +48,7 @@ export default function Header() {
 
           {/* Right side icons */}
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             <Link to="/cart">
               <Button
                 variant="ghost"
